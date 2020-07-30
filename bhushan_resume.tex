@@ -1,0 +1,193 @@
+%-------------------------
+% Resume in Latex
+% Author : Bhushan Khanale
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome}
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[2]{
+  \item\small{
+    \textbf{#1}{: #2 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING-----------------
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+  \textbf{\href{https://bhushan.codes}{\Large Bhushan Khanale}} & Email : \href{mailto:bkhanale@gmail.com}{ bkhanale@gmail.com}\\
+  \href{https://bhushan.codes}{https://bhushan.codes} & Mobile : +91-883-040-1657 \\
+\end{tabular*}
+\href{https://www.linkedin.com/in/bhushan-khanale/}{\faLinkedin}
+\href{https://github.com/bkhanale}{\faGithub}
+\href{https://twitter.com/BhushanKhanale}{\faTwitter}
+\href{https://medium.com/@bkhanale}{\faMedium}
+
+
+%-----------EDUCATION-----------------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {International Institute of Information Technology}{Bhubaneswar, India}
+      {Bachelor of Technology in Computer Engineering;  GPA: 8.17}{Aug 2016 -- Jul 2020}
+  \resumeSubHeadingListEnd
+
+
+%-----------EXPERIENCE-----------------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Turtlemint}{Pune, India}
+      {Software Development Engineer}{Jan 2020 - Present}
+      \resumeItemListStart
+        \resumeItem{Mint Academy}
+          {Mint Academy is Turtlemint's new LMS platform. Thousands of insurance agents daily interact with the platform for their certifications under Turtlemint. Worked on the complete backend implementation using Django.}
+        \resumeItem{Turtlemint Assistant}
+          {Turtlemint Assistant is one of the internal tools used by Turtlemint to manage the constant updates made to their vertical specific databases. This tool is also responsible for providing insights to the vertical managers. Worked on Django based backend implementation.}
+      \resumeItemListEnd
+      
+% --------Multiple Positions Heading------------
+%    \resumeSubSubheading
+%     {Software Engineer I}{Oct 2014 - Sep 2016}
+%     \resumeItemListStart
+%        \resumeItem{Apache Beam}
+%          {Apache Beam is a unified model for defining both batch and streaming data-parallel processing pipelines}
+%     \resumeItemListEnd
+%    \resumeSubHeadingListEnd
+%-------------------------------------------
+
+    \resumeSubheading
+      {coala Association e.V.}{Remote}
+      {Google Summer of Code Student Developer}{May 2019 - Aug 2019}
+      \resumeItemListStart
+        \resumeItem{Improve Generic coala-bears Quality}
+          {coala is an open-source software which provides a unified interface for linting and fixing code with a single configuration file, regardless of the programming languages used and can be easily customized and integrated with the CI. Worked on the improvement of the generic bears (plugins) for coala responsible to do language independent analysis. \href{http://projects.coala.io/GSoC/2019/StatusReport/bkhanale.html}{Project report}.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Quantsapp}{Mumbai, India}
+      {Software Development Engineer Intern}{May 2018 - Jul 2018}
+      \resumeItemListStart
+        \resumeItem{Options Optimizer}
+          {Developed a flask backend for their new options optimizer application. The application is responsible for their internal optimizations made to their service application.}
+        \resumeItem{Option Desk}
+          {A web application with django backend to help maintain their daily tasks and schedules with their clients.}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+
+%-----------PROJECTS-----------------
+\section{Projects}
+  \resumeSubHeadingListStart
+    \resumeSubItem{MasterChef}
+      {A node based electron app providing an IDE for programming contests using CodeChef API.}
+    \resumeSubItem{Justtask}
+      {A todo app developed using Spring boot backend and React frontend.}
+    \resumeSubItem{cmbot}
+      {An open-source configurable multi-platform bot made using errbot which takes care of your organizations and your github and gitlab needs through your favourite chat platforms.}
+  \resumeSubHeadingListEnd
+
+
+%-----------VOLUNTEER EXPERIENCE-------
+\section{Volunteer Experience}
+  \resumeSubHeadingListStart
+    \resumeSubItem{Open source contributor}
+      {Contributed to open-source organizations like coala, hugo, and many others.}
+    \resumeSubItem{CodeChef}
+      {Problem setter for some of CodeChef's official contests.}
+    \resumeSubItem{Programming Society}
+      {Worked as a competitive programming lead at institute's programming club.}
+    \resumeSubItem{ACM Student Chapter}
+      {Worked as a Vice-Chairperson for institute's ACM Student Chapter conducting bootcamps and learning sessions for freshers.}
+  \resumeSubHeadingListEnd
+
+
+%-----------ACHIEVEMENTS--------------
+\section{Achievements}
+  \resumeSubHeadingListStart
+    \resumeSubItem{Google Codejam}
+      {One of the top 25 Indian contestants in Google's competitive programming contest codejam.}
+    \resumeSubItem{CodeChef}
+      {Achieved highest world rank 33 in CodeChef's April Long Contest with several top 100 rankings in India.}
+  \resumeSubHeadingListEnd
+
+
+%--------PROGRAMMING SKILLS------------
+\section{Programming Skills}
+ \resumeSubHeadingListStart
+    \item{\textbf{Languages}{: Python, Java, Javascript, C++, SQL, Go}}
+    \item{\textbf{Technologies}{: Django, Spring boot, AWS, React, Docker, ElasticSearch, MongoDB, git}}
+ \resumeSubHeadingListEnd
+
+
+%-------------------------------------------
+\end{document}
